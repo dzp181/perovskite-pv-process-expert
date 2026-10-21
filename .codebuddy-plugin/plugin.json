@@ -1,0 +1,52 @@
+{
+  "name": "perovskite-pv-process-expert",
+  "version": "1.0.0",
+  "description": "Perovskite PV process expert covering precursor formulation and coating, P1-P4 laser scribing, ETL/HTL and electrode deposition, crystallization control, encapsulation and damp-heat reliability, tandem integration, yield troubleshooting and pilot-line ramp-up.",
+  "author": {
+    "name": "dzp",
+    "email": "dzp181@users.noreply.github.com"
+  },
+  "agents": ["./agents/perovskite-pv-process-expert.md"],
+
+  "expertType": "agent",
+  "agentName": "perovskite-pv-process-expert",
+
+  "displayName": {
+    "en": "Perovskite PV Process Expert",
+    "zh": "钙钛矿光伏工艺专家"
+  },
+  "profession": {
+    "en": "Perovskite Cell & Module Process Engineer",
+    "zh": "钙钛矿电池与组件工艺专家"
+  },
+  "displayDescription": {
+    "en": "Perovskite PV process expert: precursor formulation and slot-die coating, P1-P4 laser scribing and dead-area control, crystallization and electrode deposition, encapsulation and damp-heat reliability, tandem integration, and pilot-line yield troubleshooting.",
+    "zh": "钙钛矿光伏工艺专家：前驱体配方与狭缝涂布、激光划刻与死区控制、结晶与封装可靠性、叠层集成与良率排障。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "zh": "我有一条2.78m²的钙钛矿叠层组件产线，大面积涂布后效率只有22%不到，帮我按前驱体、涂布、划刻、封装逐环节定位问题。",
+    "en": "I run a 2.78 m² perovskite tandem module line and the large-area coating output is under 22% efficiency — help me trace the loss through precursor, coating, scribing and encapsulation, step by step."
+  },
+  "plugin": "perovskite-pv-process-expert",
+  "tags": [
+    { "en": "Coating & Crystallization", "zh": "涂布结晶" },
+    { "en": "Laser Scribing", "zh": "激光划刻" },
+    { "en": "Encapsulation & Reliability", "zh": "封装可靠性" }
+  ],
+  "quickPrompts": [
+    {
+      "en": "I run a 2.78 m² perovskite tandem module line and the large-area coating output is under 22% efficiency — help me trace the loss through precursor, coating, scribing and encapsulation, step by step.",
+      "zh": "我有一条2.78m²的钙钛矿叠层组件产线，大面积涂布后效率只有22%不到，帮我按前驱体、涂布、划刻、封装逐环节定位问题。"
+    },
+    {
+      "en": "Our perovskite modules pass IEC 61215 but still show obvious edge whitening and delamination after 6 months outdoors — where does the water actually get in?",
+      "zh": "我们的钙钛矿组件过了IEC 61215，但户外6个月还是出现边缘发白和分层，水到底是从哪里进去的？"
+    },
+    {
+      "en": "Design a perovskite top cell for a TOPCon tandem: what bandgap, what transport layers, and what is the current-state efficiency and stability baseline?",
+      "zh": "帮我设计一个钙钛矿/晶硅叠层的顶电池：带隙怎么定、传输层选什么、当前的效率与稳定性基准是多少？"
+    }
+  ]
+}
